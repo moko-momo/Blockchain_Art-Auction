@@ -4,7 +4,20 @@
 
 在网页端运行，实现对艺术品拍卖、竞价及完成转账的拍卖系统。该dapp基于Truffle框架，使用web3与javascript交互。智能合约使用solidity编写，部署在ganache的私链上。
 
-[TOC]
+## Contents
+- [Developing Environment](#developing-environment)
+- [Run](#run)
+- [Subject Background](#subject-background)
+- [Function](#function)
+	- [Structure](#structure)
+	- [Main Function](#main-function)
+- [Test Result](#test-result)
+- [Project Process](#project-process)
+	- [Contract and Migration](#contract-and-migration)
+	- [Interaction](#interaction)
+	- [User Interface](#user-interface)
+- [Problems and Solution](#problems-and-solution)
+- [Feelings](#feelings)
 
 ## Developing Environment
 
@@ -109,7 +122,7 @@ npm run dev
 
 ## Test Result
 
-![index.png](img/index.png)
+![index.png](./img/index.PNG)
 
 **Demo Movie**
 
@@ -156,7 +169,7 @@ truffle unbox webpack
 
 2 查看项目结构：
 
-![older](img/folder.png)
+![older](img/folder.PNG)
 
 - app/：放置交互所需的脚本内容，包括html、css文件和js等。
 - build/：包括已经编译和部署过的历史信息（这里是我编译运行过的结构）。
