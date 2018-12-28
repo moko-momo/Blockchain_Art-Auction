@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Art Auction</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+	<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+	<link href="./styles/app.css" rel="stylesheet" type="text/css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./app.js"></script>
+</head>
+
+<body>
+
+	<div class="animated bounceInDown">
+	<div style="display: none;" class="alert alert-success" id="msg"></div>
+	<h1 class="text-center">Art Auction</h1>
+	<div id = "border">
+	<div class = "row">
+	<div class="col-sm-14">
+		<div class="container">
+		
+		<form class="col-sm-2 col-md-offset-2">
+	    	<h3>Sponsor</h3>
+	    </form>
+	    <form class="col-sm-2 col-md-offset-4">
+	    	<h3>Bidder</h3>
+	    </form>
+	    
+	    </div>
+	</div>
+	</div>
+	<div class = "row">
+		<div class="container">
+	    	<form id="auction" class="col-sm-2 col-md-offset-1">
+	    	<h4>Sponsor Your Auction</h4>
+	    	<div class="form-group">
+	       		<label for="sponsor-account1">Enter Your account</label>
+	       		<input type="text" class="form-control" name="sponsor-account1" id="sponsor-account1" placeholder="0,1,2.." required="required">
+	        </div>
+	        <div class="form-group">
+	        	<label for="auction-time">Enter Time for Auction</label>
+	        	<input type="text" class="form-control" name="auction-time" id="auction-time" placeholder="Enough time for auction" required="required">
+	        </div>
+	       	<button type="submit" class="btn">Submit Auction</button>
+	   		</form>
+	   	
+	   	
+	        <form id="stop-auction" class="col-sm-2">
+	        <h4>Stop Your Auction</h4>
+	        <div class="form-group">
+	       		<label for="sponsor-account2">Enter Your account</label>
+	        	<input type="text" class="form-control" name="sponsor-account2" id="sponsor-account2" placeholder="0,1,2.." required="required">
+	        </div>
+	        <button type="submit" class="btn">Close Auction</button>
+	        </form>
+		 
+		<div class="col-sm-2 col-md-offset-2">
+
+     		<form id="bidding">
+       		<h4>Bid</h4>
+       		<div class="form-group">
+        		<label for="bid-amount">Amount You Bid</label>
+        		<input type="text" class="form-control" name="bid-amount" id="bid-amount" placeholder="The price you bid" required="required">
+       		</div>
+        	<div class="form-group">
+          		<label for="bidder-account1">Enter your account</label>
+          		<input type="text" class="form-control" name="bidder-account1" id="bidder-account1" placeholder="1,2,3.." required="required">
+       		</div>
+    		<button type="submit" class="btn">Submit Bid</button>
+      		</form>
+      		<br>
+      		<form id = "highestBid" >
+      		<button type="submit" class="btn">Show Highest Bid</button>
+      		</form>
+   		</div>
+      	
+      		<form id="withdraw" class="col-sm-2">
+       		<h4>Withdraw Your Money</h4>
+       		<div class="form-group">
+        		<label for="bidder-account2">Enter Your account</label>
+        		<input type="text" class="form-control" name="bidder-account2" id="bidder-account2" placeholder="0,1,2.." required="required">
+       		</div>
+       		<button type="submit" class="btn">Withdraw money</button>
+       		</form>
+
+		</div>
+    </div>
+    </div>
+    <h5 class="text-center">Supported by Truffle & Ganache @Shao Xingyu 16340188</h5>
+    </div>
+</body>
+</html>
